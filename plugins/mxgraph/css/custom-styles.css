@@ -1,0 +1,24 @@
+.content{
+    background-color: #fff;
+}
+.content #page #graph-frm{
+    border-width:1px;
+    border-style:solid;
+    border-color: #ccc;
+}
+.content #page td #graph{
+    height: calc(100vh - 110px);
+}
+
+div.mxPopupMenu{
+    background-image: none !important;
+    background: #fff !important;
+}
+
+td.mxPopupMenuIcon{
+    background: none !important;
+}
+
+table.mxPopupMenu tr td hr{
+    margin: 0;
+}
