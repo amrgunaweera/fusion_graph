@@ -369,43 +369,64 @@ mxToolbar.prototype.addSwitchMode = function(title, icon, funct, pressedIcon, st
 mxToolbar.prototype.addMode = function(title, icon, funct, pressedIcon, style, toggle)
 {
 	toggle = (toggle != null) ? toggle : true;
-	var img = document.createElement((icon != null) ? 'img' : 'button');
+
+		//custom
+		var lis = document.createElement((icon != null) ? 'a' : 'button');
+		var divs = document.createElement('div');
 	
-	img.initialClassName = style || 'mxToolbarMode';
-	img.className = img.initialClassName;
+
+	//var img = document.createElement((icon != null) ? 'img' : 'button');
+	var img = document.createElement('img');
+	
+	lis.initialClassName = style || 'mxToolbarMode';
+	lis.className = lis.initialClassName;
 	img.setAttribute('src', icon);
 	img.altIcon = pressedIcon;
 
 	if (title != null)
 	{
-		img.setAttribute('title', title);
+		lis.setAttribute('title', title);
 	}
 	
 	if (this.enabled && toggle)
 	{
-		mxEvent.addListener(img, 'click', mxUtils.bind(this, function(evt)
+		mxEvent.addListener(lis, 'click', mxUtils.bind(this, function(evt)
 		{
-			this.selectMode(img, funct);
+			this.selectMode(lis, funct);
 			this.noReset = false;
 		}));
 		
-		mxEvent.addListener(img, 'dblclick', mxUtils.bind(this, function(evt)
+		mxEvent.addListener(lis, 'dblclick', mxUtils.bind(this, function(evt)
 		{
-			this.selectMode(img, funct);
+			this.selectMode(lis, funct);
 			this.noReset = true;
 		}));
 		
 		if (this.defaultMode == null)
 		{
-			this.defaultMode = img;
+			this.defaultMode = lis;
 			this.defaultFunction = funct;
-			this.selectMode(img, funct);
+			this.selectMode(lis, funct);
 		}
 	}
 
-	this.container.appendChild(img);					
+	if (title != null)
+	{
+		var txtTitles = title;
+	}	
+	
+	divs.className = 'componentName';
+	divs.appendChild(document.createTextNode(txtTitles));
+	lis.appendChild(img);
+	lis.appendChild(divs);
 
+	//this.container.appendChild(img);
+	this.container.appendChild(lis);
+
+	//return img;
 	return img;
+
+	
 };
 
 /**

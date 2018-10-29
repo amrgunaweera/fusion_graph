@@ -22,3 +22,32 @@ td.mxPopupMenuIcon{
 table.mxPopupMenu tr td hr{
     margin: 0;
 }
+
+
+/*------------ Modal Styles --------------*/
+#myModal .modal-header{
+    color: #fff;
+    background-color: #3c8dbc !important;
+}
+
+#myModal .modal-header .close{
+    color: #fff;
+}
+
+#myModal .modal-body li.active a{
+    background-color: rgb(238, 238, 238);
+    border-left-width: 3px;
+    border-right: 0;
+}
+
+#myModal .modal-body li.active a:focus{
+    border-top: 0;
+}
+
+#myModal .modal-body .nav-tabs{
+    border-bottom: 0px; 
+}
+
+#myModal .modal-body .content{
+    border-left: solid 1px rgb(233, 233, 233);
+}

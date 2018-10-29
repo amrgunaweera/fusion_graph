@@ -439,7 +439,7 @@
                   <textarea id="xml" style="height:480px;width:684px;display:none;border-style:none;"></textarea>
                 </td>
 
-                <td id="toolbar" style="width:50px;padding-left:20px;" valign="top">
+                <td id="toolbar" style="width:200px;padding-left:20px;" valign="top">
                     <!-- Toolbar Here -->				
                 </td>
 
@@ -473,11 +473,13 @@
                             <li role="presentation"><a href="#auth" aria-controls="auth" role="tab" data-toggle="tab">Authentication</a></li>
                         </ul>
                       </div>
-                      <div class="col-md-9">
+                      <div class="col-md-9 content">
                           <div>
                               <!-- Tab panes -->
                               <div class="tab-content">
                                 <div role="tabpanel" class="tab-pane active" id="targetVar">
+
+                                    <h4>Target Variable</h4>
                                     <form role="form">
                                         <div class="box-body">
                                           <div class="form-group">
@@ -500,9 +502,29 @@
                                                 <th>Description</th>
                                               </tr>
                                               <tr>
-                                                <td>testAbc</td>
-                                                <td>Integer</td>
-                                                <td>Common Usage</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                              </tr>
+                                              <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                              </tr>
+                                              <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                              </tr>
+                                              <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                              </tr>
+                                              <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
                                               </tr>
                                             </table>
 
@@ -518,16 +540,20 @@
                                           </div>
                                           <div class="form-group">
                                               <div>Type</div>
-                                              <select class="form-control">
-                                                <option>One Of</option>
-                                              </select>
-                                              <select class="form-control">
-                                                  <option>option 1</option>
-                                                  <option>option 2</option>
-                                                  <option>option 3</option>
-                                                  <option>option 4</option>
-                                                  <option>option 5</option>
-                                                </select>
+                                              <div class="row">
+                                                <div class="col-md-4">
+                                                    <select class="form-control">
+                                                        <option>One Of</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <select class="form-control">
+                                                        <option>String</option>
+                                                        <option>JSON</option>
+                                                    </select>
+                                                </div>
+                                              </div>
+                                              
                                           </div>
                                           <div class="checkbox">
                                               <label>
@@ -535,15 +561,147 @@
                                               </label>
                                             </div>
                                             
-
                                         </div>
                                         <!-- /.box-body -->
                           
                                       </form>
                                 </div>
-                                <div role="tabpanel" class="tab-pane" id="config">2</div>
-                                <div role="tabpanel" class="tab-pane" id="input">3</div>
-                                <div role="tabpanel" class="tab-pane" id="auth">4</div>
+                                <div role="tabpanel" class="tab-pane" id="config">
+                                    <h4>Configure URL Method</h4>
+
+                                    <form role="form">
+                                        <div class="box-body">
+                                          <div class="form-group">
+                                            <label>URL Path</label>
+                                            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="URL Path">
+                                          </div>
+                                          <div class="form-group">
+                                              <label>REST Method</label>
+                                              <select class="form-control">
+                                                  <option>GET</option>
+                                                  <option>POST</option>
+                                                  <option>DELETE</option>
+                                                  <option>PUT</option>
+                                                </select>
+                                          </div>
+                                          <div class="form-group">
+                                              <label>Timeout (s)</label>
+                                              <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Timeout in seconds">
+                                          </div>
+                                          <div class="form-group">
+                                              <label>Var Status Code</label>
+                                              <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Var Status Code">
+                                          </div>
+                                        </div>
+                                    </form>
+
+
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="input">
+                                    <h4>Inputs Assignment</h4>
+
+                                    <form role="form">
+                                        <div class="box-body">
+                                          <div class="form-group">
+                                            <div class="row">
+                                              <div class="col-md-8 form-horizontal">
+
+                                                <div class="form-group">
+                                                    <div for="inputEmail3" class="col-sm-3 control-label">Input Type</div>
+
+                                                    <div class="col-sm-9">
+                                                        <select class="form-control">
+                                                            <option>HTML/Text</option>
+                                                            <option>Mutipart</option>
+                                                            <option>Application/JSON</option>
+                                                            <option>Application/XML</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                  
+                                                  
+                                              </div>
+                                              <div class="col-md-4">
+                                                <div class="pull-right">
+                                                    <button type="button" class="btn btn-primary" data-dismiss="modal">Add</button>
+                                                    <button type="button" class="btn btn-default" data-dismiss="modal">Remove</button>
+                                                </div>
+                                                  
+                                              </div>
+                                            </div>
+
+                                            <div class="row">
+                                              <div class="col-md-12">
+                                                <table class="table table-bordered">
+                                                  <tr>
+                                                    <th>Input Name</th>
+                                                    <th>Value</th>
+                                                    <th>
+                                                      Is File
+                                                    </th>
+                                                  </tr>
+                                                  <tr>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                  </tr>
+                                                </table>
+                                              </div>
+                                            </div>
+                                              
+                                          </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="auth">
+                                    <h4>REST Authentication</h4>
+
+                                    <form role="form">
+                                        <div class="box-body">
+                                          <div class="form-group">
+                                            <label>User Name</label>
+                                            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="User Name">
+                                          </div>
+                                          <div class="form-group">
+                                              <label>Password</label>
+                                              <input type="password" class="form-control" id="exampleInputEmail1" placeholder="Password">
+                                            </div>
+                                          <div class="form-group">
+                                              <label>Encryption Type</label>
+                                              <select class="form-control">
+                                                  <option>None</option>
+                                                  <option>Plain</option>
+                                                  <option>Digest</option>
+                                                </select>
+                                          </div>
+                                        </div>
+                                    </form>
+                                </div>
                               </div>
                             
                           </div>
@@ -552,7 +710,7 @@
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-success">Save changes</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
                   </div>
                 </div>
                 <!-- /.modal-content -->
