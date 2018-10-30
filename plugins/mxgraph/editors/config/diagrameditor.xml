@@ -38,26 +38,6 @@
 				</mxCell>
 			</Rect>
 		</add>
-
-
-		<add as="test">
-			<Rect label="Test" href="">
-				<mxCell vertex="1">	
-					<mxGeometry as="geometry" width="80" height="40"/>
-				</mxCell>
-			</Rect>
-		</add>
-
-		<add as="symbol">
-			<Symbol label="Symbol" customAttribute="whatever">
-				<mxCell vertex="1" connectable="1" style="symbol;image=images/event.png">    
-				<mxGeometry as="geometry" width="32" height="32"/>
-				</mxCell>
-				<CustomChild customAttribute="whatever"/>
-			</Symbol>
-		</add>
-
-
 		<add as="text">
 			<Text label="Text Here" href="">
 				<mxCell vertex="1" style="text">	
@@ -107,6 +87,37 @@
 				</mxCell>
 			</Shape>
 		</add>
+
+		<!-- Custom objects -->
+		<add as="begin">
+			<Roundrect label="Begin" href="">
+				<mxCell vertex="1" style="rounded" nameId="1">		
+					<mxGeometry as="geometry" width="80" height="40"/>
+				</mxCell>
+			</Roundrect>
+		</add>
+		<add as="script">
+			<Roundrect label="Script" href="">
+				<mxCell vertex="1" style="rounded" nameId="2">		
+					<mxGeometry as="geometry" width="80" height="40"/>
+				</mxCell>
+			</Roundrect>
+		</add>
+		<add as="optionSet">
+			<Roundrect label="Option Set" href="">
+				<mxCell vertex="1" style="rounded" nameId="3">		
+					<mxGeometry as="geometry" width="80" height="40"/>
+				</mxCell>
+			</Roundrect>
+		</add>
+		<add as="restCall">
+			<Roundrect label="REST Call" href="">
+				<mxCell vertex="1" style="rounded" nameId="4">		
+					<mxGeometry as="geometry" width="80" height="40"/>
+				</mxCell>
+			</Roundrect>
+		</add>
+		<!-- Custom objects -->
 	</Array>
 	<mxGraph as="graph" alternateEdgeStyle="verticalConnector" allowLoops="1" dropEnabled="1">
 		<add as="isAutoSizeCell"><![CDATA[
@@ -334,8 +345,8 @@
 				}
 			}
 		]]></add>
-		<br/><br/>
-		<add as="Text" template="text" icon="plugins/mxgraph/editors/images/text.gif"/>
+		<!--<br/><br/>
+		 <add as="Text" template="text" icon="plugins/mxgraph/editors/images/text.gif"/>
 		<add as="Container" template="container" icon="plugins/mxgraph/editors/images/swimlane.gif"/>
 		<add as="Rectangle" template="rectangle" icon="plugins/mxgraph/editors/images/rectangle.gif"/>
 		<add as="Rounded" template="rounded" icon="plugins/mxgraph/editors/images/rounded.gif"/>
@@ -348,10 +359,54 @@
 		<add as="Cylinder" template="shape" style="cylinder" icon="plugins/mxgraph/editors/images/cylinder.gif"/>
 		<add as="Cloud" template="cloud" style="cloud" icon="plugins/mxgraph/editors/images/cloud.gif"/>
 		<add as="Line" template="hline" style="hline" icon="plugins/mxgraph/editors/images/hline.gif"/>
-		<add as="Image" template="image" icon="plugins/mxgraph/editors/images/image.gif"/>
+		<add as="Image" template="image" icon="plugins/mxgraph/editors/images/image.gif"/> -->
 
-		<add as="Test" template="test" icon="plugins/mxgraph/editors/images/rectangle.gif"/>
-		<add as="Symbol" template="symbol" icon="plugins/mxgraph/editors/images/bar-chart.svg"/>
+		<!-- custom icons -->
+
+		<!-- *** Common *** -->
+		<add as="Common" template="begin" icon=""/>
+		
+		<add as="Begin" template="begin" icon="plugins/mxgraph/editors/images/custom/rocket.svg"/>
+
+		<add as="Advanced Query" template="begin" icon="plugins/mxgraph/editors/images/custom/database-post.svg"/>
+		<add as="Database Delete" template="begin" icon="plugins/mxgraph/editors/images/custom/database-delete.svg"/>
+		<add as="Database Insert" template="begin" icon="plugins/mxgraph/editors/images/custom/database-insert.svg"/>
+		<add as="Databse Query" template="begin" icon="plugins/mxgraph/editors/images/custom/database-query.svg"/>
+
+		<add as="Databse Update" template="begin" icon="plugins/mxgraph/editors/images/custom/database-update.svg"/>
+		<add as="Decision" template="begin" icon="plugins/mxgraph/editors/images/custom/decision.svg"/>
+		<add as="End Call" template="begin" icon="plugins/mxgraph/editors/images/custom/end-call.svg"/>
+		<add as="Log" template="begin" icon="plugins/mxgraph/editors/images/custom/logs.svg"/>
+
+		<add as="Portal Entry" template="begin" icon="plugins/mxgraph/editors/images/custom/portal-entry.svg"/>
+		<add as="Portal Exit" template="begin" icon="plugins/mxgraph/editors/images/custom/portal-exit.svg"/>
+		<add as="REST Call" template="restCall" icon="plugins/mxgraph/editors/images/custom/computing-cloud.svg"/>
+		<add as="Script" template="script" icon="plugins/mxgraph/editors/images/custom/script.svg"/>
+
+		<add as="Send Notification" template="begin" icon="plugins/mxgraph/editors/images/custom/send-notifications.svg"/>
+		<add as="Switch" template="begin" icon="plugins/mxgraph/editors/images/custom/switch.svg"/>
+		<add as="Varible Assignment" template="begin" icon="plugins/mxgraph/editors/images/custom/variable-assign.svg"/>
+		<add as="Webservice Call" template="begin" icon="plugins/mxgraph/editors/images/custom/web-service.svg"/>
+
+		<add as="XMLRPC Call" template="begin" icon="plugins/mxgraph/editors/images/custom/xml.svg"/>
+		<br/>
+
+		<!-- *** Voice *** -->
+		<add as="Voice" template="begin" icon=""/>
+
+		<add as="Advanced Transfer" template="optionSet" icon="plugins/mxgraph/editors/images/custom/advanced-transfer.svg"/>
+		<add as="Dynamic Menu" template="optionSet" icon="plugins/mxgraph/editors/images/custom/dynamic-menu.svg"/>
+		<add as="Option Set" template="optionSet" icon="plugins/mxgraph/editors/images/custom/mix.svg"/>
+		<add as="Play Prompt" template="optionSet" icon="plugins/mxgraph/editors/images/custom/play-prompt.svg"/>
+
+		<add as="Question" template="optionSet" icon="plugins/mxgraph/editors/images/custom/question.svg"/>
+		<add as="Record" template="optionSet" icon="plugins/mxgraph/editors/images/custom/record.svg"/>
+		<add as="Streaming" template="optionSet" icon="plugins/mxgraph/editors/images/custom/streaming.svg"/>
+		<add as="Waiting" template="optionSet" icon="plugins/mxgraph/editors/images/custom/waiting.svg"/>
+
+
+		
+		
 
 	</mxDefaultToolbar>
 </mxEditor>

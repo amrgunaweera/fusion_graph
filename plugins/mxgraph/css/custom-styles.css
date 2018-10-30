@@ -25,29 +25,85 @@ table.mxPopupMenu tr td hr{
 
 
 /*------------ Modal Styles --------------*/
-#myModal .modal-header{
+.modal .modal-header{
     color: #fff;
     background-color: #3c8dbc !important;
 }
 
-#myModal .modal-header .close{
+.modal .modal-header .close{
     color: #fff;
 }
 
-#myModal .modal-body li.active a{
+.modal .modal-body li.active a{
     background-color: rgb(238, 238, 238);
     border-left-width: 3px;
     border-right: 0;
 }
 
-#myModal .modal-body li.active a:focus{
+.modal .modal-body li.active a:focus{
     border-top: 0;
 }
 
-#myModal .modal-body .nav-tabs{
+.modal .modal-body .nav-tabs{
     border-bottom: 0px; 
 }
 
-#myModal .modal-body .content{
+.modal .modal-body .content{
     border-left: solid 1px rgb(233, 233, 233);
+}
+
+#toolbar{
+    width:250px;
+    padding-left:20px;
+    overflow: auto;
+    height: calc(100vh - 110px);
+}
+#toolbar a.mxToolbarMode{
+    float: left;
+    width: 50%;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+#toolbar img.mxToolbarMode, #toolbar img.mxToolbarModeSelected{
+    display: none;
+}
+#toolbar .mxToolbarMode > img{
+    width: 20px;
+    margin-right: 10px;
+}
+
+#toolbar div.mxToolbarMode{
+    width: auto;
+    height: 30px;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+#toolbar div.mxToolbarMode:nth-child(4), #toolbar div.mxToolbarMode:nth-child(24){
+    font-weight: bold;
+    background-color: rgb(243, 243, 243);
+    padding: 5px 10px;
+    margin-bottom: 5px;
+}
+
+#toolbar div.mxToolbarMode:nth-child(4) img, #toolbar div.mxToolbarMode:nth-child(24) img{
+    margin: 0;
+}
+
+.content{
+    padding-right: 0;
+}
+.side-bar-buttons{
+   padding-left: 8px;
+   padding-right: 8px
+}
+
+.side-bar-buttons .tasks-menu{
+    float: left;
 }

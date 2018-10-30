@@ -371,60 +371,66 @@ mxToolbar.prototype.addMode = function(title, icon, funct, pressedIcon, style, t
 	toggle = (toggle != null) ? toggle : true;
 
 		//custom
-		var lis = document.createElement((icon != null) ? 'a' : 'button');
-		var divs = document.createElement('div');
+		var divs = document.createElement((icon != null) ? 'div' : 'button');
+		var spans = document.createElement('span');
 	
 
 	//var img = document.createElement((icon != null) ? 'img' : 'button');
 	var img = document.createElement('img');
-	
-	lis.initialClassName = style || 'mxToolbarMode';
-	lis.className = lis.initialClassName;
+
 	img.setAttribute('src', icon);
 	img.altIcon = pressedIcon;
+	
+	/* lis.initialClassName = style || 'mxToolbarMode';
+	lis.className = lis.initialClassName; */
+	divs.initialClassName = style || 'mxToolbarMode';
+	divs.className = divs.initialClassName;
+	divs.setAttribute('src', icon);
+	divs.altIcon = pressedIcon;
 
 	if (title != null)
 	{
-		lis.setAttribute('title', title);
+		//img.setAttribute('title', title);
+		divs.setAttribute('title', title);
 	}
 	
 	if (this.enabled && toggle)
 	{
-		mxEvent.addListener(lis, 'click', mxUtils.bind(this, function(evt)
+		mxEvent.addListener(divs, 'click', mxUtils.bind(this, function(evt)
 		{
-			this.selectMode(lis, funct);
+			this.selectMode(divs, funct);
 			this.noReset = false;
 		}));
 		
-		mxEvent.addListener(lis, 'dblclick', mxUtils.bind(this, function(evt)
+		mxEvent.addListener(divs, 'dblclick', mxUtils.bind(this, function(evt)
 		{
-			this.selectMode(lis, funct);
+			this.selectMode(divs, funct);
 			this.noReset = true;
 		}));
 		
 		if (this.defaultMode == null)
 		{
-			this.defaultMode = lis;
+			this.defaultMode = divs;
 			this.defaultFunction = funct;
-			this.selectMode(lis, funct);
+			this.selectMode(divs, funct);
 		}
-	}
+	}	
 
 	if (title != null)
 	{
 		var txtTitles = title;
-	}	
+	}
 	
-	divs.className = 'componentName';
-	divs.appendChild(document.createTextNode(txtTitles));
-	lis.appendChild(img);
-	lis.appendChild(divs);
+	spans.className = 'componentName';
+	spans.appendChild(document.createTextNode(txtTitles));
+	divs.appendChild(img);
+	divs.appendChild(spans);
 
 	//this.container.appendChild(img);
-	this.container.appendChild(lis);
+	this.container.appendChild(divs);
 
 	//return img;
-	return img;
+	return divs;
 
 	
 };

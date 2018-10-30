@@ -2402,7 +2402,17 @@ mxEditor.prototype.swapStyles = function (first, second)
  */
 mxEditor.prototype.showPropertyModal = function (cell)
 {
-	$('#myModal').modal('show');
+	console.log(cell.nameId);
+	if(cell.nameId == 1){
+		$('#beginModal').modal('show');
+	}else if(cell.nameId == 2){
+		$('#scriptModal').modal('show');
+	}else if(cell.nameId == 3){
+		$('#optionSetModal').modal('show');
+	}else if(cell.nameId == 4){
+		$('#restCallModal').modal('show');
+	}
+	
 }
 
 /**
