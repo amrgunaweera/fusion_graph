@@ -47,7 +47,7 @@
 			}
 			
 		    // Changes the zoom on mouseWheel events
-		    mxEvent.addMouseWheelListener(function (evt, up)
+		    /* mxEvent.addMouseWheelListener(function (evt, up)
 		    {
 			    if (!mxEvent.isConsumed(evt))
 			    {
@@ -62,7 +62,7 @@
 					
 					mxEvent.consume(evt);
 			    }
-		    });
+		    }); */
 
 			// Defines a new action to switch between
 			// XML and graphical display

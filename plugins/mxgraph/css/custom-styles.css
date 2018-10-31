@@ -5,9 +5,11 @@
     border-width:1px;
     border-style:solid;
     border-color: #ccc;
+
+    max-width: 400px;
 }
 .content #page td #graph{
-    height: calc(100vh - 110px);
+    height: calc(100vh - 147px);
 }
 
 div.mxPopupMenu{
@@ -51,31 +53,28 @@ table.mxPopupMenu tr td hr{
 .modal .modal-body .content{
     border-left: solid 1px rgb(233, 233, 233);
 }
+/*------------ Modal Styles end --------------*/
 
+
+/*------------ Toolbar Styles --------------*/
 #toolbar{
     width:250px;
     padding-left:20px;
     overflow: auto;
-    height: calc(100vh - 110px);
-}
-#toolbar a.mxToolbarMode{
-    float: left;
-    width: 50%;
-    display: block;
-    text-align: center;
-    margin-bottom: 10px;
+    height: calc(100vh - 147px);
 }
 #toolbar img.mxToolbarMode, #toolbar img.mxToolbarModeSelected{
     display: none;
 }
-#toolbar .mxToolbarMode > img{
+#toolbar .mxToolbarMode > img, #toolbar .mxToolbarModeSelected > img{
     width: 20px;
     margin-right: 10px;
 }
 
-#toolbar div.mxToolbarMode{
+#toolbar div.mxToolbarMode, #toolbar div.mxToolbarModeSelected{
     width: auto;
     height: 30px;
+    padding: 5px 10px;
 
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -83,6 +82,9 @@ table.mxPopupMenu tr td hr{
        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
+}
+#toolbar div.mxToolbarModeSelected{
+    background-color: #e8f6ff;
 }
 
 #toolbar div.mxToolbarMode:nth-child(4), #toolbar div.mxToolbarMode:nth-child(24){
@@ -95,6 +97,7 @@ table.mxPopupMenu tr td hr{
 #toolbar div.mxToolbarMode:nth-child(4) img, #toolbar div.mxToolbarMode:nth-child(24) img{
     margin: 0;
 }
+/*------------ Toolbar Styles ends --------------*/
 
 .content{
     padding-right: 0;
@@ -107,3 +110,13 @@ table.mxPopupMenu tr td hr{
 .side-bar-buttons .tasks-menu{
     float: left;
 }
+
+/*------------ Template overrides --------------*/
+.main-footer{
+    font-size: 12px;
+    padding: 10px 15px;
+}
+.navbar-nav>.user-menu .user-image{
+    float: none
+}
+/*------------ Template overrides ends --------------*/
