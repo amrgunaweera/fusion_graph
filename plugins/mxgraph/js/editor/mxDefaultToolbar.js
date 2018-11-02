@@ -513,6 +513,7 @@ mxDefaultToolbar.prototype.installDropHandler = function (img, dropHandler)
 	var sprite = document.createElement('img');
 	sprite.setAttribute('src', img.getAttribute('src'));
 
+
 	// Handles delayed loading of the images
 	var loader = mxUtils.bind(this, function(evt)
 	{
@@ -524,8 +525,10 @@ mxDefaultToolbar.prototype.installDropHandler = function (img, dropHandler)
 		sprite.style.width = (2 * img.offsetWidth) + 'px';
 		sprite.style.height = (2 * img.offsetHeight) + 'px';
 
-		mxUtils.makeDraggable(img, this.editor.graph, dropHandler,
-			sprite);
+		var dxi = -210;//sprite.style.position.x = (1 * img.offsetWidth) + 'px';
+		var dyi = -30; //sprite.style.position.y = (1 * img.offsetHeight) + 'px';
+
+		mxUtils.makeDraggable(img, this.editor.graph, dropHandler, sprite, dxi, dyi);
 		mxEvent.removeListener(sprite, 'load', loader);
 	});
 

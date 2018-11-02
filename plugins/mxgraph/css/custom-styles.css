@@ -9,7 +9,7 @@
     max-width: 400px;
 }
 .content #page td #graph{
-    height: calc(100vh - 147px);
+    height: calc(100vh - 144px);
 }
 
 div.mxPopupMenu{
@@ -61,7 +61,7 @@ table.mxPopupMenu tr td hr{
     width:250px;
     padding-left:20px;
     overflow: auto;
-    height: calc(100vh - 147px);
+    height: calc(100vh - 144px);
 }
 #toolbar img.mxToolbarMode, #toolbar img.mxToolbarModeSelected{
     display: none;
@@ -87,14 +87,16 @@ table.mxPopupMenu tr td hr{
     background-color: #e8f6ff;
 }
 
-#toolbar div.mxToolbarMode:nth-child(4), #toolbar div.mxToolbarMode:nth-child(24){
+#toolbar div.mxToolbarMode:nth-child(4), #toolbar div.mxToolbarMode:nth-child(24),
+#toolbar div.mxToolbarModeSelected:nth-child(4), #toolbar div.mxToolbarModeSelected:nth-child(24){
     font-weight: bold;
     background-color: rgb(243, 243, 243);
     padding: 5px 10px;
     margin-bottom: 5px;
 }
 
-#toolbar div.mxToolbarMode:nth-child(4) img, #toolbar div.mxToolbarMode:nth-child(24) img{
+#toolbar div.mxToolbarMode:nth-child(4) img, #toolbar div.mxToolbarMode:nth-child(24) img,
+#toolbar div.mxToolbarModeSelected:nth-child(4) img, #toolbar div.mxToolbarModeSelected:nth-child(24) img{
     margin: 0;
 }
 /*------------ Toolbar Styles ends --------------*/

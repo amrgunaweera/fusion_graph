@@ -96,16 +96,72 @@
 				</mxCell>
 			</Roundrect>
 		</add>
-		<add as="script">
-			<Roundrect label="Script" href="">
-				<mxCell vertex="1" style="rounded" nameId="2">		
+		<add as="advancedQuery">
+			<Roundrect label="Advanced Query" href="">
+				<mxCell vertex="1" style="rounded">		
+					<mxGeometry as="geometry" width="100" height="40"/>
+				</mxCell>
+			</Roundrect>
+		</add>
+		<add as="databaseInsert">
+			<Roundrect label="Database Insert" href="">
+				<mxCell vertex="1" style="rounded">		
+					<mxGeometry as="geometry" width="100" height="40"/>
+				</mxCell>
+			</Roundrect>
+		</add>
+		<add as="databaseDelete">
+			<Roundrect label="Database Delete" href="">
+				<mxCell vertex="1" style="rounded">		
+					<mxGeometry as="geometry" width="100" height="40"/>
+				</mxCell>
+			</Roundrect>
+		</add>
+		<add as="databaseQuery">
+			<Roundrect label="Database Query" href="">
+				<mxCell vertex="1" style="rounded">		
+					<mxGeometry as="geometry" width="100" height="40"/>
+				</mxCell>
+			</Roundrect>
+		</add>
+		<add as="databaseUpdate">
+			<Roundrect label="Database Update" href="">
+				<mxCell vertex="1" style="rounded">		
+					<mxGeometry as="geometry" width="100" height="40"/>
+				</mxCell>
+			</Roundrect>
+		</add>
+		<add as="decision">
+			<Roundrect label="Decision" href="">
+				<mxCell vertex="1" style="rounded">		
 					<mxGeometry as="geometry" width="80" height="40"/>
 				</mxCell>
 			</Roundrect>
 		</add>
-		<add as="optionSet">
-			<Roundrect label="Option Set" href="">
-				<mxCell vertex="1" style="rounded" nameId="3">		
+		<add as="endCall">
+			<Roundrect label="End Call" href="">
+				<mxCell vertex="1" style="rounded">		
+					<mxGeometry as="geometry" width="80" height="40"/>
+				</mxCell>
+			</Roundrect>
+		</add>
+		<add as="log">
+			<Roundrect label="Log" href="">
+				<mxCell vertex="1" style="rounded">		
+					<mxGeometry as="geometry" width="80" height="40"/>
+				</mxCell>
+			</Roundrect>
+		</add>
+		<add as="portalEntry">
+			<Roundrect label="Portal Entry" href="">
+				<mxCell vertex="1" style="rounded">		
+					<mxGeometry as="geometry" width="80" height="40"/>
+				</mxCell>
+			</Roundrect>
+		</add>
+		<add as="portalExit">
+			<Roundrect label="Portal Exit" href="">
+				<mxCell vertex="1" style="rounded">		
 					<mxGeometry as="geometry" width="80" height="40"/>
 				</mxCell>
 			</Roundrect>
@@ -117,6 +173,109 @@
 				</mxCell>
 			</Roundrect>
 		</add>
+		<add as="script">
+			<Roundrect label="Script" href="">
+				<mxCell vertex="1" style="rounded" nameId="2">		
+					<mxGeometry as="geometry" width="80" height="40"/>
+				</mxCell>
+			</Roundrect>
+		</add>
+		<add as="sendNotification">
+			<Roundrect label="Send Notification" href="">
+				<mxCell vertex="1" style="rounded">		
+					<mxGeometry as="geometry" width="100" height="40"/>
+				</mxCell>
+			</Roundrect>
+		</add>
+		<add as="switch">
+			<Roundrect label="Switch" href="">
+				<mxCell vertex="1" style="rounded">		
+					<mxGeometry as="geometry" width="80" height="40"/>
+				</mxCell>
+			</Roundrect>
+		</add>
+		<add as="variableAssignment">
+			<Roundrect label="Variable Assignment" href="">
+				<mxCell vertex="1" style="rounded">		
+					<mxGeometry as="geometry" width="120" height="40"/>
+				</mxCell>
+			</Roundrect>
+		</add>
+		<add as="webserviceCall">
+			<Roundrect label="Webservice Call" href="">
+				<mxCell vertex="1" style="rounded">		
+					<mxGeometry as="geometry" width="100" height="40"/>
+				</mxCell>
+			</Roundrect>
+		</add>
+		<add as="xmlrpcCall">
+			<Roundrect label="XMLRPC Call" href="">
+				<mxCell vertex="1" style="rounded">		
+					<mxGeometry as="geometry" width="100" height="40"/>
+				</mxCell>
+			</Roundrect>
+		</add>
+		
+
+		
+
+		<add as="advancedTransfer">
+			<Roundrect label="Advanced Transfer" href="">
+				<mxCell vertex="1" style="rounded">		
+					<mxGeometry as="geometry" width="120" height="40"/>
+				</mxCell>
+			</Roundrect>
+		</add>
+		<add as="dynamicMenu">
+			<Roundrect label="Dynamic Menu" href="">
+				<mxCell vertex="1" style="rounded">		
+					<mxGeometry as="geometry" width="100" height="40"/>
+				</mxCell>
+			</Roundrect>
+		</add>
+		<add as="optionSet">
+			<Roundrect label="Option Set" href="">
+				<mxCell vertex="1" style="rounded" nameId="3">		
+					<mxGeometry as="geometry" width="80" height="40"/>
+				</mxCell>
+			</Roundrect>
+		</add>
+		<add as="playPrompt">
+			<Roundrect label="Play Prompt" href="">
+				<mxCell vertex="1" style="rounded">		
+					<mxGeometry as="geometry" width="100" height="40"/>
+				</mxCell>
+			</Roundrect>
+		</add>
+		<add as="question">
+			<Roundrect label="Question" href="">
+				<mxCell vertex="1" style="rounded">		
+					<mxGeometry as="geometry" width="80" height="40"/>
+				</mxCell>
+			</Roundrect>
+		</add>
+		<add as="record">
+			<Roundrect label="Record" href="">
+				<mxCell vertex="1" style="rounded">		
+					<mxGeometry as="geometry" width="80" height="40"/>
+				</mxCell>
+			</Roundrect>
+		</add>
+		<add as="streaming">
+			<Roundrect label="Streaming" href="">
+				<mxCell vertex="1" style="rounded">		
+					<mxGeometry as="geometry" width="80" height="40"/>
+				</mxCell>
+			</Roundrect>
+		</add>
+		<add as="waiting">
+			<Roundrect label="Waiting" href="">
+				<mxCell vertex="1" style="rounded">		
+					<mxGeometry as="geometry" width="80" height="40"/>
+				</mxCell>
+			</Roundrect>
+		</add>
+		
 		<!-- Custom objects -->
 	</Array>
 	<mxGraph as="graph" alternateEdgeStyle="verticalConnector" allowLoops="1" dropEnabled="1">
@@ -368,41 +527,41 @@
 		
 		<add as="Begin" template="begin" icon="plugins/mxgraph/editors/images/custom/rocket.svg"/>
 
-		<add as="Advanced Query" template="begin" icon="plugins/mxgraph/editors/images/custom/database-post.svg"/>
-		<add as="Database Delete" template="begin" icon="plugins/mxgraph/editors/images/custom/database-delete.svg"/>
-		<add as="Database Insert" template="begin" icon="plugins/mxgraph/editors/images/custom/database-insert.svg"/>
-		<add as="Databse Query" template="begin" icon="plugins/mxgraph/editors/images/custom/database-query.svg"/>
+		<add as="Advanced Query" template="advancedQuery" icon="plugins/mxgraph/editors/images/custom/database-post.svg"/>
+		<add as="Database Delete" template="databaseDelete" icon="plugins/mxgraph/editors/images/custom/database-delete.svg"/>
+		<add as="Database Insert" template="databaseInsert" icon="plugins/mxgraph/editors/images/custom/database-insert.svg"/>
+		<add as="Database Query" template="databaseQuery" icon="plugins/mxgraph/editors/images/custom/database-query.svg"/>
 
-		<add as="Databse Update" template="begin" icon="plugins/mxgraph/editors/images/custom/database-update.svg"/>
-		<add as="Decision" template="begin" icon="plugins/mxgraph/editors/images/custom/decision.svg"/>
-		<add as="End Call" template="begin" icon="plugins/mxgraph/editors/images/custom/end-call.svg"/>
-		<add as="Log" template="begin" icon="plugins/mxgraph/editors/images/custom/logs.svg"/>
+		<add as="Databse Update" template="databaseUpdate" icon="plugins/mxgraph/editors/images/custom/database-update.svg"/>
+		<add as="Decision" template="decision" icon="plugins/mxgraph/editors/images/custom/decision.svg"/>
+		<add as="End Call" template="endCall" icon="plugins/mxgraph/editors/images/custom/end-call.svg"/>
+		<add as="Log" template="log" icon="plugins/mxgraph/editors/images/custom/logs.svg"/>
 
-		<add as="Portal Entry" template="begin" icon="plugins/mxgraph/editors/images/custom/portal-entry.svg"/>
-		<add as="Portal Exit" template="begin" icon="plugins/mxgraph/editors/images/custom/portal-exit.svg"/>
+		<add as="Portal Entry" template="portalEntry" icon="plugins/mxgraph/editors/images/custom/portal-entry.svg"/>
+		<add as="Portal Exit" template="portalExit" icon="plugins/mxgraph/editors/images/custom/portal-exit.svg"/>
 		<add as="REST Call" template="restCall" icon="plugins/mxgraph/editors/images/custom/computing-cloud.svg"/>
 		<add as="Script" template="script" icon="plugins/mxgraph/editors/images/custom/script.svg"/>
 
-		<add as="Send Notification" template="begin" icon="plugins/mxgraph/editors/images/custom/send-notifications.svg"/>
-		<add as="Switch" template="begin" icon="plugins/mxgraph/editors/images/custom/switch.svg"/>
-		<add as="Varible Assignment" template="begin" icon="plugins/mxgraph/editors/images/custom/variable-assign.svg"/>
-		<add as="Webservice Call" template="begin" icon="plugins/mxgraph/editors/images/custom/web-service.svg"/>
+		<add as="Send Notification" template="sendNotification" icon="plugins/mxgraph/editors/images/custom/send-notifications.svg"/>
+		<add as="Switch" template="switch" icon="plugins/mxgraph/editors/images/custom/switch.svg"/>
+		<add as="Varible Assignment" template="variableAssignment" icon="plugins/mxgraph/editors/images/custom/variable-assign.svg"/>
+		<add as="Webservice Call" template="webserviceCall" icon="plugins/mxgraph/editors/images/custom/web-service.svg"/>
 
-		<add as="XMLRPC Call" template="begin" icon="plugins/mxgraph/editors/images/custom/xml.svg"/>
+		<add as="XMLRPC Call" template="xmlrpcCall" icon="plugins/mxgraph/editors/images/custom/xml.svg"/>
 		<br/>
 
 		<!-- *** Voice *** -->
 		<add as="Voice" template="begin" icon=""/>
 
-		<add as="Advanced Transfer" template="optionSet" icon="plugins/mxgraph/editors/images/custom/advanced-transfer.svg"/>
-		<add as="Dynamic Menu" template="optionSet" icon="plugins/mxgraph/editors/images/custom/dynamic-menu.svg"/>
+		<add as="Advanced Transfer" template="advancedTransfer" icon="plugins/mxgraph/editors/images/custom/advanced-transfer.svg"/>
+		<add as="Dynamic Menu" template="dynamicMenu" icon="plugins/mxgraph/editors/images/custom/dynamic-menu.svg"/>
 		<add as="Option Set" template="optionSet" icon="plugins/mxgraph/editors/images/custom/mix.svg"/>
-		<add as="Play Prompt" template="optionSet" icon="plugins/mxgraph/editors/images/custom/play-prompt.svg"/>
+		<add as="Play Prompt" template="playPrompt" icon="plugins/mxgraph/editors/images/custom/play-prompt.svg"/>
 
-		<add as="Question" template="optionSet" icon="plugins/mxgraph/editors/images/custom/question.svg"/>
-		<add as="Record" template="optionSet" icon="plugins/mxgraph/editors/images/custom/record.svg"/>
-		<add as="Streaming" template="optionSet" icon="plugins/mxgraph/editors/images/custom/streaming.svg"/>
-		<add as="Waiting" template="optionSet" icon="plugins/mxgraph/editors/images/custom/waiting.svg"/>
+		<add as="Question" template="question" icon="plugins/mxgraph/editors/images/custom/question.svg"/>
+		<add as="Record" template="record" icon="plugins/mxgraph/editors/images/custom/record.svg"/>
+		<add as="Streaming" template="streaming" icon="plugins/mxgraph/editors/images/custom/streaming.svg"/>
+		<add as="Waiting" template="waiting" icon="plugins/mxgraph/editors/images/custom/waiting.svg"/>
 
 
 		
